@@ -3,9 +3,9 @@
 # ╔══════════════════════════════════════════════════════════════════╗
 # ║                OpenClaw CTL / MoltBot 管理脚本                  ║
 # ╠══════════════════════════════════════════════════════════════════╣
-# ║  作者     GitHub  : by Joey                                     ║
-# ║           YouTube : @joeyblog                                   ║
-# ║           Telegram: https://t.me/+ft-zI76oovgwNmRh             ║
+# ║  作者     GitHub  : Zevon (elricshadow)                          ║
+# ║           GitHub  : https://github.com/elricshadow              ║
+# ║                                                                 ║
 # ╠══════════════════════════════════════════════════════════════════╣
 # ║  致谢 / 引用                                                    ║
 # ║  · 原始脚本基础来自 kejilion（@kejilion）                       ║
@@ -3385,9 +3385,9 @@ EOF
 			--bold \
 			--border rounded --border-foreground 201 \
 			--padding "0 4" --align center \
-			"$(gum style --bold --foreground 201 '◈  by Joey  ◈')" \
-			"$(gum style --bold --foreground 51  '▶  YouTube   @joeyblog')" \
-			"$(gum style --bold --foreground 51  '▶  Telegram  t.me/+ft-zI76oovgwNmRh')" \
+			"$(gum style --bold --foreground 201 '◈  Zevon  ◈')" \
+			"$(gum style --bold --foreground 51  '▶  GitHub    @elricshadow')" \
+			"$(gum style --bold --foreground 51  '▶  OpenClaw  Zevon-Edition')" \
 			"$(gum style --foreground 208        '⚡ 基于：kejilion · cliproxyapi-installer')"
 		echo
 
