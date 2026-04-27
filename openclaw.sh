@@ -3,7 +3,7 @@
 # ╔══════════════════════════════════════════════════════════════════╗
 # ║                OpenClaw CTL / MoltBot 管理脚本                  ║
 # ╠══════════════════════════════════════════════════════════════════╣
-# ║  作者     GitHub  : Zevon (elricshadow)                          ║
+# ║  作者     GitHub  : Elric (elricshadow)                          ║
 # ║           GitHub  : https://github.com/elricshadow              ║
 # ║                                                                 ║
 # ╠══════════════════════════════════════════════════════════════════╣
@@ -3385,9 +3385,9 @@ EOF
 			--bold \
 			--border rounded --border-foreground 201 \
 			--padding "0 4" --align center \
-			"$(gum style --bold --foreground 201 '◈  Zevon  ◈')" \
+			"$(gum style --bold --foreground 201 '◈  Elric  ◈')" \
 			"$(gum style --bold --foreground 51  '▶  GitHub    @elricshadow')" \
-			"$(gum style --bold --foreground 51  '▶  OpenClaw  Zevon-Edition')" \
+			"$(gum style --bold --foreground 51  '▶  OpenClaw  Elric-Edition')" \
 			"$(gum style --foreground 208        '⚡ 基于：kejilion · cliproxyapi-installer')"
 		echo
 

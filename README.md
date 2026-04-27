@@ -1,12 +1,12 @@
-# OpenClaw CTL / MoltBot 管理脚本 (Zevon 增强版)
+# OpenClaw CTL / MoltBot 管理脚本 (Elric 增强版)
 
-> **🚀 提示：此版本由 Zevon 深度定制，完美适配多 Profile 隔离环境及自动化管理。**
+> **🚀 提示：此版本由 Elric 深度定制，完美适配多 Profile 隔离环境及自动化管理。**
 > 
 > 本脚本是在 [byJoey/openclawctl](https://github.com/byJoey/openclawctl) 基础上进行的二次开发与增强。
 
 ---
 
-## 🚀 Zevon 版新增/修改亮点 (Change Log)
+## 🚀 Elric 版新增/修改亮点 (Change Log)
 1.  **原生多环境支持**：优化了对 OpenClaw 多实例（如 `--profile test_lobster`）的路径识别，避免主 Agent 配置冲突。
 2.  **独立软件库**：所有组件与核心脚本均从 `elricshadow/openclawctl` 仓库直接拉取，确保维护的独立性与安全性。
 3.  **安装逻辑增强**：修正了原始脚本在非交互环境下的部分路径报错，提升了在不同服务器环境下的兼容性。
@@ -15,7 +15,7 @@
 
 ## 📥 快速安装指令 (一键脚本)
 
-在你的服务器终端运行以下命令即可（已自动适配 Zevon 仓库）：
+在你的服务器终端运行以下命令即可（已自动适配 Elric 仓库）：
 
 ### macOS / Linux
 ```bash
