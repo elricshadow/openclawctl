@@ -323,6 +323,28 @@ EOF
 }
 
 moltbot_menu() {
+	papaxia_manage_menu() { 
+		while true; do 
+			clear; ui_header "管理爬爬虾 (PaPaXia)"; 
+			local status; 
+			if systemctl --user is-active --quiet openclaw-test-lobster.service 2>/dev/null; then 
+				status="$(gum style --foreground 46 "● 运行中")"; 
+			else 
+				status="$(gum style --foreground 196 "○ 已停止")"; 
+			fi; 
+			echo -e "  当前状态: $status    端口: 18790"; echo; 
+			local choice; 
+			choice=$(gum choose --cursor "❯ " --header "选择爬爬虾管理操作" "启动爬爬虾" "停止爬爬虾" "重启爬爬虾" "查看运行日志" "编辑配置文件" "退出") || break; 
+			case "$choice" in 
+				"启动爬爬虾") systemctl --user start openclaw-test-lobster.service; ui_ok "已下达启动指令"; break_end ;; 
+				"停止爬爬虾") systemctl --user stop openclaw-test-lobster.service; ui_ok "已下达停止指令"; break_end ;; 
+				"重启爬爬虾") systemctl --user restart openclaw-test-lobster.service; ui_ok "已下达重启指令"; break_end ;; 
+				"查看运行日志") journalctl --user -u openclaw-test-lobster -n 50 --no-pager; break_end ;; 
+				"编辑配置文件") nano /root/.openclaw-test_lobster/openclaw.json ;; 
+				"退出"|*) break ;; 
+			esac; 
+		done; 
+	}
 	is_macos && _ensure_brew
 
 	_install_shortcut
@@ -3409,6 +3431,8 @@ EOF
 			"API管理" \
 			"CLIProxyAPI 管理" \
 			"机器人连接对接" \
+			"管理爬爬虾 (PaPaXia)" \
+			"管理爬爬虾 (PaPaXia)" \
 			"安装插件" \
 			"安装技能" \
 			"编辑主配置文件" \
@@ -3432,6 +3456,8 @@ EOF
 		"API管理")           openclaw_api_manage_menu ;;
 		"CLIProxyAPI 管理") cliproxyapi_manage_menu ;;
 		"机器人连接对接")    change_tg_bot_code ;;
+		"管理爬爬虾 (PaPaXia)") papaxia_manage_menu ;;
+			"管理爬爬虾 (PaPaXia)" \
 			"安装插件")     install_plugin ;;
 			"安装技能")     install_skill ;;
 			"编辑主配置文件") nano_openclaw_json ;;
