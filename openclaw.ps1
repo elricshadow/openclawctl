@@ -2,9 +2,9 @@
 # ╔══════════════════════════════════════════════════════════════════╗
 # ║           OpenClaw CTL / MoltBot Windows 管理脚本               ║
 # ╠══════════════════════════════════════════════════════════════════╣
-# ║  作者     GitHub  : byJoey                                      ║
-# ║           YouTube : @joeyblog                                   ║
-# ║           Telegram: https://t.me/+ft-zI76oovgwNmRh             ║
+# ║  作者     GitHub  : Elric (elricshadow)                        ║
+# ║           GitHub  : https://github.com/elricshadow              ║
+# ║                                                                 ║
 # ╠══════════════════════════════════════════════════════════════════╣
 # ║  致谢 / 引用                                                    ║
 # ║  · 原始脚本基础来自 kejilion（@kejilion）                       ║
@@ -1634,9 +1634,9 @@ function Main-Menu {
         Write-Host "$running" -ForegroundColor $(if ($running -eq '运行中') { 'Green' } else { 'Red' })
         Write-Host ""
         Write-Colored "  ╔══════════════════════════════════════════╗" Magenta
-        Write-Colored "  ║  by Joey     GitHub: byJoey              ║" Magenta
-        Write-Colored "  ║  YouTube: @joeyblog                      ║" Magenta
-        Write-Colored "  ║  Telegram: t.me/+ft-zI76oovgwNmRh       ║" Magenta
+        Write-Colored "  ║  Elric       GitHub: @elricshadow         ║" Magenta
+        Write-Colored "  ║  Edition: Elric-Edition                   ║" Magenta
+        Write-Colored "  ║  OpenClaw: Personal Management Tool       ║" Magenta
         Write-Colored "  ║  基于：kejilion · cliproxyapi-installer  ║" Magenta
         Write-Colored "  ╚══════════════════════════════════════════╝" Magenta
         Write-Host ""
@@ -1729,7 +1729,7 @@ function Install-Shortcut {
         $block = @"
 
 $markerV2
-function oc { irm https://raw.githubusercontent.com/byJoey/openclawctl/main/openclaw.ps1 | iex }
+function oc { irm https://raw.githubusercontent.com/elricshadow/openclawctl/main/openclaw.ps1 | iex }
 "@
         Add-Content -Path $profilePath -Value $block -Encoding UTF8
     }
