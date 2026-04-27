@@ -3432,7 +3432,6 @@ EOF
 			"CLIProxyAPI 管理" \
 			"机器人连接对接" \
 			"管理爬爬虾 (PaPaXia)" \
-			"管理爬爬虾 (PaPaXia)" \
 			"安装插件" \
 			"安装技能" \
 			"编辑主配置文件" \
@@ -3457,8 +3456,7 @@ EOF
 		"CLIProxyAPI 管理") cliproxyapi_manage_menu ;;
 		"机器人连接对接")    change_tg_bot_code ;;
 		"管理爬爬虾 (PaPaXia)") papaxia_manage_menu ;;
-			"管理爬爬虾 (PaPaXia)" \
-			"安装插件")     install_plugin ;;
+		"安装插件")     install_plugin ;;
 			"安装技能")     install_skill ;;
 			"编辑主配置文件") nano_openclaw_json ;;
 			"配置向导")
