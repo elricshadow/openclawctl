@@ -315,7 +315,7 @@ _install_shortcut() {
 
 	cat > "$shortcut" <<EOF
 #!/usr/bin/env bash
-curl -fsSL https://raw.githubusercontent.com/byJoey/openclawctl/main/openclaw.sh \\
+curl -fsSL https://raw.githubusercontent.com/elricshadow/openclawctl/main/openclaw.sh \\
     -o "$store_dir/openclawctl.sh" 2>/dev/null && chmod +x "$store_dir/openclawctl.sh"
 exec bash "$store_dir/openclawctl.sh" "\$@"
 EOF
